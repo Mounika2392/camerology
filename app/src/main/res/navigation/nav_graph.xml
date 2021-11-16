@@ -4,12 +4,19 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/fragment_home">
 
-    <fragment android:id="@+id/fragment_home"
+    <fragment
+        android:id="@+id/fragment_home"
         android:name="com.learner.camerology.HomeFragment"
         android:label="Home Fragment">
         <action
             android:id="@+id/action_fragment_home_to_fragment_camera_preview"
-            app:destination="@id/nav_graph2" />
+            app:destination="@id/camera_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/camera_fragment"
+        android:name="com.learner.camerology.CameraPreview.CameraFragment"
+        android:label="Camera Fragment" >
     </fragment>
 
 </navigation>
